@@ -1,0 +1,695 @@
+/* ==========================================================
+   Loan Prediction System
+   Professional Styling
+========================================================== */
+
+/* ==========================
+   Google Font
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   Global Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================
+   Body
+========================== */
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #667eea 0%,
+        #764ba2 100%
+    );
+
+    background-attachment:fixed;
+
+    color:#333;
+
+}
+
+/* ==========================
+   Container
+========================== */
+
+.container{
+
+    padding-top:40px;
+    padding-bottom:40px;
+
+}
+
+/* ==========================
+   Card
+========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.18);
+
+    transition:0.4s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================
+   Card Header
+========================== */
+
+.card-header{
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
+
+    padding:30px;
+
+    border:none;
+
+}
+
+.card-header h1,
+.card-header h2{
+
+    font-weight:700;
+
+}
+
+.card-header p{
+
+    margin-top:10px;
+
+    opacity:.95;
+
+}
+
+/* ==========================
+   Card Body
+========================== */
+
+.card-body{
+
+    padding:40px;
+
+}
+
+/* ==========================
+   Labels
+========================== */
+
+.form-label{
+
+    font-weight:600;
+
+    color:#374151;
+
+    margin-bottom:8px;
+
+}
+
+/* ==========================
+   Inputs
+========================== */
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+
+    padding:12px 15px;
+
+    border:1px solid #ced4da;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:
+        0 0 0 .2rem rgba(
+            37,
+            99,
+            235,
+            .20
+        );
+
+}
+
+/* ==========================
+   Placeholder
+========================== */
+
+::placeholder{
+
+    color:#9ca3af;
+
+}
+/* ==========================
+   Primary Button
+========================== */
+
+.btn-primary{
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(
+            37,
+            99,
+            235,
+            .35
+        );
+
+}
+
+/* ==========================
+   Card Footer
+========================== */
+
+.card-footer{
+
+    background:#f8fafc;
+
+    border-top:1px solid #e5e7eb;
+
+    padding:18px;
+
+}
+
+/* ==========================
+   Badge
+========================== */
+
+.badge{
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    padding:15px 25px;
+
+}
+
+/* ==========================
+   Alerts
+========================== */
+
+.alert{
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+
+.alert-success{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+.alert-danger{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+.alert-warning{
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+}
+
+/* ==========================
+   Prediction Icons
+========================== */
+
+.fa-circle-check{
+
+    color:#16a34a;
+
+    animation:pop .7s ease;
+
+}
+
+.fa-circle-xmark{
+
+    color:#dc2626;
+
+    animation:pop .7s ease;
+
+}
+
+.fa-triangle-exclamation{
+
+    color:#d97706;
+
+    animation:pop .7s ease;
+
+}
+
+/* ==========================
+   Loading Spinner
+========================== */
+
+.spinner-border{
+
+    width:4rem;
+
+    height:4rem;
+
+}
+
+/* ==========================
+   Modal
+========================== */
+
+.modal-content{
+
+    border-radius:20px;
+
+}
+
+/* ==========================
+   Form Animation
+========================== */
+
+.card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* ==========================
+   Hover Effects
+========================== */
+
+.form-control:hover,
+.form-select:hover{
+
+    border-color:#2563eb;
+
+}
+
+.btn{
+
+    transition:.3s ease;
+
+}
+
+.btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================
+   Result Heading
+========================== */
+
+.display-1{
+
+    font-size:5rem;
+
+}
+
+.lead{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   Footer Text
+========================== */
+
+.card-footer small{
+
+    font-size:14px;
+
+    color:#6b7280;
+
+}
+
+/* ==========================================================
+   Responsive Design
+========================================================== */
+
+@media (max-width:992px){
+
+    .card-body{
+
+        padding:30px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    body{
+
+        padding:20px 0;
+
+    }
+
+    .container{
+
+        padding-left:15px;
+        padding-right:15px;
+
+    }
+
+    .card{
+
+        border-radius:15px;
+
+    }
+
+    .card-header{
+
+        padding:25px;
+
+    }
+
+    .card-header h1,
+    .card-header h2{
+
+        font-size:28px;
+
+    }
+
+    .display-1{
+
+        font-size:4rem;
+
+    }
+
+    .btn-primary{
+
+        width:100%;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .card-body{
+
+        padding:20px;
+
+    }
+
+    .card-header{
+
+        padding:20px;
+
+    }
+
+    .card-header h1,
+    .card-header h2{
+
+        font-size:24px;
+
+    }
+
+    .lead{
+
+        font-size:15px;
+
+    }
+
+    .display-1{
+
+        font-size:3.5rem;
+
+    }
+
+}
+
+/* ==========================================================
+   Scrollbar
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#edf2f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================================================
+   Text Selection
+========================================================== */
+
+::selection{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   Smooth Scrolling
+========================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================================================
+   Animations
+========================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pop{
+
+    0%{
+
+        transform:scale(.5);
+
+        opacity:0;
+
+    }
+
+    70%{
+
+        transform:scale(1.1);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   Utilities
+========================================================== */
+
+.shadow-hover{
+
+    transition:.3s ease;
+
+}
+
+.shadow-hover:hover{
+
+    box-shadow:0 15px 35px rgba(0,0,0,.20);
+
+}
+
+.rounded-xl{
+
+    border-radius:20px;
+
+}
+
+.text-gradient{
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #764ba2
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+/* ==========================================================
+   Form Validation States
+========================================================== */
+
+.form-control.is-valid,
+.form-select.is-valid{
+
+    border-color:#16a34a;
+
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid{
+
+    border-color:#dc2626;
+
+}
+
+/* ==========================================================
+   Loading Button
+========================================================== */
+
+button:disabled{
+
+    opacity:.75;
+
+    cursor:not-allowed;
+
+}
+
+/* ==========================================================
+   End of Stylesheet
+========================================================== */
